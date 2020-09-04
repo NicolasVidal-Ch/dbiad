@@ -1,5 +1,5 @@
 # Installer prérequis
-apt install -y krb5-user realmd adcli sssd sssd-tools samba-common samba-libs resolvconf samba-common-bin ntp packagekit samba winbind
+apt install -y krb5-user realmd adcli sssd sssd-tools samba-common samba-libs resolvconf samba-common-bin ntp packagekit samba winbind wget git
 
 # Nommer le poste
 read -p Quel est le nom du poste ? varr
