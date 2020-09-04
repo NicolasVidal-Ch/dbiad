@@ -9,8 +9,8 @@ nom=dopt380$varr
 
 > /etc/hostname
 echo $nom.bt8it.afpa >>   /etc/hostname
-echo $nom            >>   /etc/hostname
-echo bt8it.afpa          >>   /etc/hostname
+echo $nom >>   /etc/hostname
+echo bt8it.afpa >>   /etc/hostname
 
 
 # Edition fichier hosts
