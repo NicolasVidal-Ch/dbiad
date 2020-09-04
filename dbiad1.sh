@@ -1,16 +1,16 @@
 # Installer prérequis
-apt install -y krb5-user realmd adcli sssd sssd-tools samba-common samba-libs resolvconf samba-common-bin ntp packagekit samba winbind wget git
+apt install -y krb5-user dhcp-client realmd adcli sssd sssd-tools samba-common samba-libs resolvconf samba-common-bin ntp packagekit samba winbind wget git
 
 # Nommer le poste
-read -p Quel est le nom du poste ? varr
-echo nom=dopt380$varr
+read -p "Quel est le nom du poste ?" varr
+nom=dopt380$varr
 
 
 # Edition fichier hostname
-
-echo $nom.bt8it.afpa  > nano /etc/hostname
-echo $nom            >> nano /etc/hostname
-echo bt8it.afpa          >> nano /etc/hostname
+> /etc/hostname
+echo $nom.bt8it.afpa  >> /etc/hostname
+echo $nom            >> /etc/hostname
+echo bt8it.afpa          >> /etc/hostname
 
 
 # Edition fichier hosts
